@@ -29,18 +29,20 @@ The project implements an AVL tree-based system that supports operations to trac
 
 The key operations implemented in the project include:
 
-1. **`Init(int s)`**: Initializes an empty AVL tree data structure with a special quality marker.
-2. **`AddProduct()`**: Adds a new product to the AVL tree using its entry time and quality.
-3. **`RemoveProduct()`**: Removes a product from the AVL tree using its entry time.
-4. **`RemoveQuality()`**: Removes all products with the same quality.
-5. **`GetIthRankProduct()`**: Retrieves the i-th ranked product based on quality.
-6. **`GetIthRankProductBetween()`**: Retrieves the i-th ranked product between two time values.
+1. **`Init(𝑖𝑛𝑡 𝑠)`**: Initializes an empty AVL tree data structure with a special quality marker.
+2. **`AddProduct(𝑖𝑛𝑡 𝑡𝑖𝑚𝑒,𝑖𝑛𝑡 𝑞𝑢𝑎𝑙𝑖𝑡𝑦)`**: Adds a new product to the AVL tree using its entry time and quality.
+3. **`RemoveProduct(𝑖𝑛𝑡 𝑡𝑖𝑚𝑒)`**: Removes a product from the AVL tree using its entry time.
+4. **`RemoveQuality(𝑖𝑛𝑡 𝑞𝑢𝑎𝑙𝑖𝑡𝑦)`**: Removes all products with the same quality.
+5. **`GetIthRankProduct(𝑖𝑛𝑡 𝑖)`**: Retrieves the i-th ranked product based on quality.
+6. **`GetIthRankProductBetween(𝑖𝑛𝑡 𝑡𝑖𝑚𝑒1,𝑖𝑛𝑡 𝑡𝑖𝑚𝑒2,𝑖𝑛𝑡 𝑖)`**: Retrieves the i-th ranked product between two time values.
 7. **`Exists()`**: Checks if a product with the best quality exists.
 
 ### Time Complexity Requirements
 
+- **Initialize** : O(1)
 - **Insertions/Deletions**: O(log n)
 - **Rank Retrieval**: O(log n)
+- **Exists()** : O(1)
 - **Space Complexity**: O(n) where n is the number of nodes in the tree.
 
 ## Installation
