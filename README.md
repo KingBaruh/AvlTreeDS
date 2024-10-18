@@ -56,13 +56,13 @@ You need a **C compiler** such as GCC to compile the source code.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/AVL-Tree-Assignment.git
+   git clone https://github.com/yourusername/AvlTreeDS.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd AVL-Tree-Assignment
+   cd AvlTreeDS
    ```
 
 3. Compile the code:
