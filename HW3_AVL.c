@@ -1089,8 +1089,7 @@ int main()
     GetIthRankProduct(ds, 2) //The i=2 best product has time t=6 and quality q=12,returns 6
     GetIthRankProduct(ds, 6) //The i=”6 best product” has time t=5 and quality q=17,returns 5
     GetIthRankProduct(ds, 7) //The i=”7 best product” has time t=7 and quality q=17,returns 7
-    GetIthRankBetween(ds, 2, 6, 3) // looks at values with time {2,3,4,5,6} and returns the
-    i=”3 best product” between them, which has time t=2.
+    GetIthRankBetween(ds, 2, 6, 3) // looks at values with time {2,3,4,5,6} and returns the i=”3 best product” between them, which has time t=2.
     Exists(ds) // returns 1, since there exists a product with quality q=s=11
     RemoveProduct(&ds, 4) // removes product with time t=4 from the data structure
     Exists(ds) // returns 0, since there is no product with quality q=s=11
