@@ -82,11 +82,23 @@ The file contains a series of functions for managing AVL trees, but the main fun
 ### Example
 
 ```c
-DataStructure ds = Init(11);
-AddProduct(&ds, 4, 11);
-AddProduct(&ds, 6, 12);
-RemoveProduct(&ds, 4);
-int exists = Exists(ds);
+    DataStructure ds = Init(11) // initializes an empty data structure
+    AddProduct(&ds, 4, 11) // Adds a product at time t=4 and quality q=11
+    AddProduct(&ds, 6, 12) // Adds a product at time t=6 and quality q=12
+    AddProduct(&ds, 2, 13) // Adds a product at time t=2 and quality q=13
+    AddProduct(&ds, 1, 14) // Adds a product at time t=1 and quality q=14
+    AddProduct(&ds, 3, 15) // Adds a product at time t=3 and quality q=15
+    AddProduct(&ds, 5, 17) // Adds a product at time t=5 and quality q=17
+    AddProduct(&ds, 7, 17) // Adds a product at time t=7 and quality q=17
+    GetIthRankProduct(ds, 1) //The i=1 best product has time t=4 and quality q=11,returns 4
+    GetIthRankProduct(ds, 2) //The i=2 best product has time t=6 and quality q=12,returns 6
+    GetIthRankProduct(ds, 6) //The i=”6 best product” has time t=5 and quality q=17,returns 5
+    GetIthRankProduct(ds, 7) //The i=”7 best product” has time t=7 and quality q=17,returns 7
+    GetIthRankBetween(ds, 2, 6, 3) // looks at values with time {2,3,4,5,6} and returns the
+    i=”3 best product” between them, which has time t=2.
+    Exists(ds) // returns 1, since there exists a product with quality q=s=11
+    RemoveProduct(&ds, 4) // removes product with time t=4 from the data structure
+    Exists(ds) // returns 0, since there is no product with quality q=s=11
 ```
 
 ## Contributing
