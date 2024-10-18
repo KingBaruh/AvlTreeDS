@@ -68,7 +68,7 @@ You need a **C compiler** such as GCC to compile the source code.
 3. Compile the code:
 
    ```bash
-   gcc -o avl_tree HW3_AVL.c
+   gcc -o avl_tree AVL.c
    ```
 
 ## Usage
