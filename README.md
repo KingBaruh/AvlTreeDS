@@ -95,4 +95,4 @@ Feel free to fork this repository and submit pull requests with any improvements
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+This project is licensed under the MIT License. See the [MIT License](LICENSE) file for more details.
